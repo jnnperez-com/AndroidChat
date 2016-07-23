@@ -1,4 +1,4 @@
-package soy.jperez.android.androidchat;
+package soy.jperez.android.androidchat.login;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import soy.jperez.android.androidchat.R;
 
 public class LoginActivity extends AppCompatActivity {
 

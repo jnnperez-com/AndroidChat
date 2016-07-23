@@ -1,4 +1,4 @@
-package soy.jperez.android.androidchat;
+package soy.jperez.android.androidchat.domain;
 
 import com.firebase.client.AuthData;
 import com.firebase.client.DataSnapshot;
@@ -8,13 +8,13 @@ import com.firebase.client.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 /**
  * Created by Jonatan on 23/07/2016.
  */
 public class FirebaseHelper {
 
+    private static final String SEPARATOR = null ;
     private Firebase dataReference;
     private  final static String CHATS_PATH ="chats";
     private  final static String USERS_PATH ="users";
@@ -114,9 +114,7 @@ public class FirebaseHelper {
             }
 
             @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
+            public void onCancelled(FirebaseError firebaseError) {}
         });
     }
 
